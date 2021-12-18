@@ -13,7 +13,7 @@ const CTA =<svg width="289" height="142" viewBox="0 0 289 142" fill="none" xmlns
 
 function Hero (){
     return(
-        <section className="port__Section port__hero">
+        <section id="hero" className="port__Section port__hero">
             <div className="port__Container">
                 <div className="port__Layout port__Layout--V-Center port__Layout--H-SpaceBetween">
                     <div className="port__Layout--W50 port__Layout--WM-100">

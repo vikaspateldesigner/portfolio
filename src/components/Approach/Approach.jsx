@@ -4,16 +4,16 @@ import approachBlob from '../../assets/approach-blob.svg';
 
 const ApproachNames =[
     {
-        approachName : "Plan & Research"
-    },
-    {
-        approachName : "Wireframe"
+        approachName : "Product "
     },
     {
         approachName : "Prototype"
     },
     {
-        approachName : "Product"
+        approachName : "Wireframe"
+    },
+    {
+        approachName : "Plan & Research"
     },
 ]
 

@@ -6,7 +6,7 @@ import './header.css';
     
     const menu = [
         {
-            id:"home",
+            id:"hero",
             name:"Home"
         },
         {

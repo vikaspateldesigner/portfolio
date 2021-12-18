@@ -32,6 +32,8 @@
       // });
 
 
+
+
       $(window).scroll(function() {    
         var scroll = $(window).scrollTop();
         var navheight=$('header').outerHeight();
@@ -51,6 +53,15 @@
     $('.port__Hamburger').on('click', function(){
       $("body").toggleClass('nav-active');
     })
+
+          /*Smooth Scroll*/
+          $(".port__Menu--item a").on('click', function(e) {
+     e.preventDefault();
+     var target = $(this).attr('href');
+     $('html, body').animate({
+       scrollTop: ($(target).offset().top-80)
+     },1000);
+  });
     })
 
     /*cusrsor*/
@@ -60,9 +71,6 @@
     var y = e.clientY;
     var newposX = x - 50;
     var newposY = y - 50; $(".cursor").css("transform","translate3d("+newposX+"px,"+newposY+"px,0px)");
-
-
-
     });
 
 
