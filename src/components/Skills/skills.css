@@ -1,0 +1,27 @@
+
+.theme-light .port__Skills--skillSet h3.port__Subtitle:first-child {
+    color: var(--caolor-dark);
+}
+.port__Sills--item {
+    position: relative;
+    cursor: pointer;
+}
+.port__Skills--skillSet, .port__Skills--img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    transition: 300ms all linear;
+}
+.port__Skills--skillSet {
+    opacity: 0;
+    visibility: hidden;
+}
+.port__Sills--item:hover .port__Skills--skillSet {
+    opacity: 1;
+    visibility: visible;
+}
+.port__Sills--item:hover .port__Skills--img {
+    opacity: 0;
+    visibility: hidden;
+}

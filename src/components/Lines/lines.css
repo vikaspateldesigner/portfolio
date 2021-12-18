@@ -1,0 +1,117 @@
+/*Vertical Lines*/
+.theme-light .port__Lines {
+  background-color: #acacac;
+}
+.port__Lines--Wrapper {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  .port__Lines {
+    height: 100vh;
+    width: 1px;
+    background-color: var(--color--secondary);
+    position: fixed;
+    opacity: 0.2;
+  }
+  .port__Lines span {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    background-color: var(--caolor-dark);
+    left: -10px;
+    position: absolute;
+    padding: 10px 0px;
+    font-size: 1.6rem;
+    -webkit-text-stroke-width: 0.1rem;
+    -webkit-text-stroke-color: #b6b6b6;
+    color: transparent;
+    animation: move-top 30s linear 2s infinite alternate;
+  }
+  .port__Lines--One{
+    left: 14%;
+  }
+  .port__Lines--Two{
+    left: 28%;
+  }
+  .port__Lines--Three{
+    left: 42%;
+  }
+  .port__Lines--Four{
+    left: 56%;
+  }
+  .port__Lines--Five{
+    left: 70%;
+  }
+  .port__Lines--Six{
+    left: 84%;
+  }
+  .port__Lines--Seven{
+    left: 100%;
+  }
+  .port__Lines--Vertical {
+    height: 1px;
+    top: 200px;
+    position: relative;
+    width: 60%;
+  }
+  .port__Lines--Vertical-One {
+    width: 40%;
+    top: 200px;
+    left:0;
+  }
+  .port__Lines--One span{
+    --top:0vh;
+  }
+  .port__Lines--Two span{
+    --top:80vh;
+  }
+  .port__Lines--Three span{
+   --top:30vh;
+  }
+  .port__Lines--Four span{
+    --top:80vh;
+  }
+  .port__Lines--Five span{
+    --top:10vh;
+  }
+  .port__Lines--Six span{
+    --top:60vh;
+  }
+  .port__Lines--Seven span{
+    --top:100vh;
+  }
+  .port__Lines--Vertical-Two {
+    top: 200vh;
+    right: 0;
+    margin-left: auto;
+  }
+  .port__Lines--Vertical-Three {
+    top: 380vh;
+    right:0;
+    margin-left: auto;
+  }
+  /*Vertical Lines end*/
+  @keyframes move-top
+  {
+    0% {
+      top: var(--top);
+    }
+    100% {
+      top: 100%;;
+    }
+  }
+  
+
+  @media screen and (max-width:768px){
+    .port__Lines:nth-child(2n+1) {
+      display: none;
+    }
+
+    .nav-active .port__Lines--Wrapper,
+    .nav-active .port__Lines {
+      z-index: 999;
+    }
+  }

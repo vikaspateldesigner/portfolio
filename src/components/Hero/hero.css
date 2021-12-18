@@ -1,0 +1,99 @@
+.port__Section.port__hero {
+    position: relative;
+}
+.port__Hero--image {
+    display: flex;
+    justify-content: flex-end;
+}
+.Typewriter {
+    font-size: 5rem;
+}
+svg path.port_Path--Accent-Arrow {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: -1000;
+    animation: 500ms ease-in-out svg-path-reverse 1 ;
+}
+svg:hover path.port_Path--Accent-Arrow {
+    animation: 500ms ease-in-out svg-path 1;
+    animation-fill-mode: forwards;
+}
+svg path.port_Path--Accent{
+    transition: 500ms all linear;
+}
+svg:hover path.port_Path--Accent {
+    fill:var(--color-accent);
+}
+@keyframes svg-path {
+	0% {
+		stroke-dashoffset: -1000;
+
+	}
+	40% {
+		stroke-dashoffset: -1300;
+		
+	}
+	50% {
+		stroke-dashoffset: -1550;
+		
+	}
+	100% {
+		stroke-dashoffset: -1730
+	}
+}
+@keyframes svg-path-reverse {
+	0% {
+		stroke-dashoffset: -1730;
+
+	}
+	40% {
+		stroke-dashoffset: -1550;
+		
+	}
+	50% {
+		stroke-dashoffset: -1300;
+		
+	}
+	100% {
+		stroke-dashoffset: -1000
+	}
+}
+@media screen and (max-width:1200px){
+	.port__Hero--image img {
+		max-width: 400px;
+		width: 100%;
+	}
+	.Typewriter {
+		font-size: 4rem;
+	}
+	.port__Hero--Content h1 {
+		font-size: 2.5rem;
+	}
+	a.port__CTA svg {
+		width: 190px;
+		height: auto;
+	}
+}
+
+@media screen and (max-width:768px){
+    .Typewriter {
+        font-size: 3rem;
+    }
+	.port__Hero--image {
+		position: absolute;
+		top: 0;
+		right: 15px;
+		z-index: -1;
+	}
+	.port__Hero--Content .port__CTA {
+		text-align: center;
+		margin-top: 210px;
+		display: block;
+	}
+  }
+
+  @media screen and (max-width:550px){
+	.port__Hero--image {
+		right: 0;
+	}
+	
+  }
