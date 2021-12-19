@@ -6,7 +6,7 @@ export default class Footer extends Component {
         return (
             <footer>
                 <h3 className="port__Subheading">
-                    Made with <span className="port__accent"><img style={{verticalAlign:"middle"}} src={heart}/> & react </span>  by vikas patel
+                    Made with <span className="port__accent"><img style={{verticalAlign:"middle"}} src={heart}/> + react&nbsp;</span> By vikas patel
                 </h3>
             </footer>
         )

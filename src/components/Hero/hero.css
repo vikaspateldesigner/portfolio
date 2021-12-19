@@ -81,13 +81,20 @@ svg:hover path.port_Path--Accent {
 	.port__Hero--image {
 		position: absolute;
 		top: 0;
-		right: 15px;
+		right: 0;
 		z-index: -1;
+		max-width: 43rem;
+		width: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+		padding: 0 15px;
 	}
-	.port__Hero--Content .port__CTA {
+	.port__Hero--Content {
+		margin-top: 220px!important;
 		text-align: center;
-		margin-top: 210px;
-		display: block;
+	}
+	.port__Hero--Content h1 {
+		margin-bottom: 4rem!important;
 	}
   }
 

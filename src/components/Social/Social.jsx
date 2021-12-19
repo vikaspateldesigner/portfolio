@@ -69,10 +69,10 @@ const responsiveoptions = {
               items:1.3,
           },
           600:{
-              items:2,
+              items:2.3,
           },
           1000:{
-              items:4,
+              items:4.3,
           }
       }
   };
@@ -86,7 +86,7 @@ class Social extends React.Component{
                 
                 <OwlCarousel
                 className='owl-theme'
-                loop={false}
+                loop={true}
                 margin={50} 
                 dots={false} 
                 nav={false}

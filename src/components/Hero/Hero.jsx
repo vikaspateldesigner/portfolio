@@ -3,6 +3,7 @@ import heroContainer from '../../assets/heroContainer.svg';
 import cta from '../../assets/CTA.svg';
 import './hero.css';
 import Typewriter from 'typewriter-effect';
+import { portFolio } from "../imgiports";
 
 const CTA =<svg width="289" height="142" viewBox="0 0 289 142" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path className="port__InitialLine" d="M284.32 53.6017C243.877 38.3232 182.908 19.2521 136.374 11.35C113.631 7.48803 90.4074 -1.98379 58.4412 9.4856C17.0006 31.9615 4 41.746 4 84.8084C22.941 135.07 37.7229 117.826 90.4074 121.068C112.524 122.429 147.75 127.137 168.906 135.07C203.276 141.86 199.881 134.646 220.248 129.979C249.95 124.887 251.469 120.398 262.409 102.893C274.429 83.6612 250.404 28.6538 242.737 9.4856" stroke="white" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round"/>
@@ -43,7 +44,7 @@ function Hero (){
                     </div>
                     <div className="port__Layout--W50 ">
                         <div className="port__Hero--image">     
-                            <img src={heroContainer} />
+                            <img src={portFolio} alt="hero"/>
                         </div>
                     </div>
                 </div>

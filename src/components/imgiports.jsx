@@ -9,6 +9,7 @@ import shopify from '../assets/skills/shopify.png';
 import sass from '../assets/skills/sass.png';
 import html from '../assets/skills/html.png';
 import blob from '../assets/skills/skills-blob.svg';
+import portFolio from '../assets/Portfoliopic.png';
 
 /*Social Section Image Imports*/ 
 import twitter_logo from '../assets/social/twitter_logo.png';
@@ -56,6 +57,7 @@ export {
     dribble_logo,dribble_profileHeader,dribble_profilePic,
     aboutBlob,
     educationBlob,arrow1,arrow2,
-    heart
+    heart,
+    portFolio
 }
 

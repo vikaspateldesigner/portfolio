@@ -25,3 +25,9 @@
     opacity: 0;
     visibility: hidden;
 }
+
+@media screen and (max-width:768px){
+    .port__Owl--Navigation {
+        justify-content: center;
+    }
+}
